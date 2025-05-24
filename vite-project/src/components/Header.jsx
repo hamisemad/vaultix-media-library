@@ -218,7 +218,7 @@ function Header({ onProfileClick }) {
 
       <img
         src={profilePic}
-        className='w-12 p-3 rounded-full m-5 cursor-pointer'
+        className='w-12 rounded-full m-5 cursor-pointer'
         onClick={onProfileClick}
       />
     </div>
