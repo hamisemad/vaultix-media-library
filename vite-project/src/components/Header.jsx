@@ -43,7 +43,7 @@ function Header({ onProfileClick }) {
   ];
 
   return (
-    <div className='flex items-center justify-between px-3 py-5 gap-4'>
+    <div className='flex items-center justify-between py-5 gap-4'>
       <div className='flex items-center gap-8'>
         <img src={logo} className='w-32 sm:w-40 lg:w-52 object-cover p-3' />
 
@@ -218,7 +218,7 @@ function Header({ onProfileClick }) {
 
       <img
         src={profilePic}
-        className='w-12 sm:w-10 xs:w-8 p-1 rounded-full m-3 cursor-pointer'
+        className='w-12  p-1 rounded-full m-3 cursor-pointer'
         onClick={onProfileClick}
       />
     </div>
