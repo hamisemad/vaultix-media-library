@@ -15,7 +15,7 @@ function Movies() {
         params: {
           api_key: apiKey,
           page: pageNumber,
-          include_adult: false,
+         
         }
       });
 
