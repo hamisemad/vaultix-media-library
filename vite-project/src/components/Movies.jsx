@@ -11,10 +11,11 @@ function SeriesPage() {
 
    const fetchMovies = async (pageNumber) => {
     try {
-      const resp = await axios.get(`https://api.themoviedb.org/3/discover/movie`, {
+      const resp = await axios.get(`https://api.themoviedb.org/3/movie/popular`, {
         params: {
           api_key: apiKey,
           page: pageNumber,
+          include_adult: false,
         }
       });
 
