@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function SeriesPage() {
+function Movies() {
   const [movie, setMovie] = useState([]);
    const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
@@ -79,4 +79,4 @@ return (
   );
 }
 
-export default SeriesPage;
+export default Movies;
