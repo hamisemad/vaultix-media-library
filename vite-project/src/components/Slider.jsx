@@ -97,7 +97,14 @@ function Slider() {
           <img
             key={item.id}
             ref={index === 0 ? firstImageRef : null} 
-            onClick={() => navigate(`/movie/${item.id}`)}
+                       onClick={() => {
+                        if (item.media_type === 'movie') {
+                          navigate(`/Movie/${item.id}`);
+                           } else if (item.media_type === 'tv') {
+                           navigate(`/series/${item.id}`);
+                           }
+                          }}
+
             src={ImageBaseUrl + item.backdrop_path}
             className="min-w-full md:h-[450px] object-fill object-left-top mr-5 rounded-md hover:border-2 border-white transition-all duration-100 ease-in shadow-lg shadow-sky-900"
             alt={item.title || item.name}
