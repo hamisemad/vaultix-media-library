@@ -11,7 +11,7 @@ function Movies() {
 
    const fetchMovies = async (pageNumber) => {
     try {
-      const resp = await axios.get(`https://api.themoviedb.org/3/movie/popular`, {
+      const resp = await axios.get(`https://api.themoviedb.org/3/trending/movie/week`, {
         params: {
           api_key: apiKey,
           page: pageNumber,
